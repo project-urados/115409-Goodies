@@ -1,0 +1,8 @@
+# file_server has no third-party runtime dependencies.
+# It runs on the Python 3.8+ standard library (POSIX systems only).
+#
+# Install nothing to run the server:
+#   python3 file_server.py --directory ./files
+#
+# Run the test suite (also stdlib only):
+#   python3 -m unittest discover -s tests -v

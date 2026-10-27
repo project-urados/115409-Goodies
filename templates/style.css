@@ -1,0 +1,33 @@
+:root { --bg:#f5f7fa; --card:#fff; --fg:#1f2933; --muted:#6b7785; --accent:#1f6feb;
+        --border:#e4e7eb; --hover:#f0f4fa; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f1419; --card:#18202a; --fg:#e6edf3; --muted:#8b98a5;
+          --accent:#58a6ff; --border:#263241; --hover:#1d2834; }
+}
+* { box-sizing: border-box; }
+body { margin:0; font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+       Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); }
+header { background:var(--card); border-bottom:1px solid var(--border); padding:16px 24px; }
+header h1 { margin:0; font-size:18px; font-weight:600; }
+main { max-width:1000px; margin:24px auto; padding:0 16px; }
+.crumbs { margin-bottom:12px; color:var(--muted); word-break:break-all; }
+.crumbs a { color:var(--accent); text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:10px 16px; text-align:left; border-bottom:1px solid var(--border); }
+th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted);
+     background:var(--card); }
+tr:last-child td { border-bottom:none; }
+tbody tr:hover { background:var(--hover); }
+td.num, th.num { text-align:right; white-space:nowrap; color:var(--muted); }
+td.name a { color:var(--fg); text-decoration:none; word-break:break-all; }
+td.name a:hover { color:var(--accent); text-decoration:underline; }
+.badge { display:inline-block; min-width:44px; margin-right:10px; padding:2px 6px;
+         font-size:11px; font-weight:600; text-align:center; border-radius:4px;
+         background:var(--border); color:var(--muted); text-transform:uppercase; }
+.btn { color:var(--accent); text-decoration:none; font-size:13px; padding:4px 10px;
+       border:1px solid var(--accent); border-radius:6px; white-space:nowrap; }
+.btn:hover { background:var(--accent); color:#fff; }
+.empty { padding:32px; text-align:center; color:var(--muted); }
+footer { margin:16px 0 32px; text-align:center; color:var(--muted); font-size:13px; }
+@media (max-width:640px) { .hide-sm { display:none; } }
